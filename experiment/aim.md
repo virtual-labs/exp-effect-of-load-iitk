@@ -1,1 +1,1 @@
-### Aim of the experiment
+### Effect of load on wear of materials.
