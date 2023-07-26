@@ -20,4 +20,4 @@ The applied load directly influences the wear rate, and it can typically be meas
 SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
 1 |Neel Prajapati | Student |Mechanical Engineering | REC Banda | neelprajapati7568@gmail.com
-2 | . | . | . | . | .
+
