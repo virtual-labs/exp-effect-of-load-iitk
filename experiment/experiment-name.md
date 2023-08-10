@@ -1,1 +1,1 @@
-## load on wear of materials 
+## Effect of load on wear of materials 
