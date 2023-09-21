@@ -1,1 +1,1 @@
-### Determine Effect of load on wear of materials.
+###  To determine effect of load on wear of materials.
