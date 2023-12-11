@@ -1,1 +1,1 @@
-<b>  To determine effect of load on wear of materials</b>
+To determine effect of load on wear of materials
