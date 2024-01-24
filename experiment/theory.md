@@ -1,4 +1,4 @@
-The applied load directly influences the wear rate, and it can typically be measured using an empirical relationship known as Archard's wear equation, which is given below.<br>
+The applied load directly influences the wear rate, and it can typically be measured using an empirical relationship known as Archard's wear equation, which is given below.<br><br>
 <image src="images/pic1.png"><br>
 Where, Q is the wear rate [mm<sup>3</sup>/N·m] of soft material, W is the applied load (N), and L is the sliding distance (m). K is the material specific constant known as the wear coefficient which also depends on the operating wear mechanism.<br>
 Archard's wear equation can be modified to incorporate additional variables, such as material hardness (H, measured in GPa). The modified equation is known as Archard's wear equation and is expressed as follows.<br>
