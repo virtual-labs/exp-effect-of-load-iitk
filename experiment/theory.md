@@ -11,7 +11,7 @@ Stress distribution can be significantly affected by the nature of the applied l
 Adhesive wear occurs when two surfaces come into contact and adhere to each other, resulting in material transfer and subsequent wear. Higher loads can increase the contact pressure between surfaces, promoting adhesion and potentially increasing adhesive wear.<br>
 When hard particles or asperities causes wear down the surface of a substance, results in an abrasive wear.  In some circumstances, a greater load can assist in deeply enmeshing abrasive particles into the material, limiting their capacity to induce additional wear. However, at excessively high loads, abrasive particles can cause severe damage to the material.<br>
 According to equation 1, a material has a larger propensity for wear if its wear coefficient (K) is higher, which means that the material will wear out faster under a specific set of circumstances. The wear coefficient depends on materials and wear mechanisms. Here are some approximate ranges of wear coefficients (in mm<sup>3</sup>/ N·m) for common materials and wear mechanisms:<br>
-<image src="images/pic3.PNG" width="180" height="180"><br><br>
+<image src="images/pic3.PNG" width="250" height="250"><br><br>
 <b>Effect of load on fatigue wear:</b><br>
 Fatigue wear is caused by repeated cyclic loading, which can lead to the formation and propagation of cracks in the material. Higher loads can accelerate fatigue wear, as they impose greater stress amplitudes on the material, reducing its fatigue life.<br><br>
 <b>Effect of load on lubrication film thickness:</b><br>
