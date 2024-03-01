@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. According to Archard’s wear equation, more the hardness of material",
+      "answers": {
+        "a": "More is the wear rate",
+        "b": "Lower the wear rate",
+        "c": "Wear rate doesn’t depend on the hardness",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. The effect of load on wear rate is primarily influenced by:",
+      "answers": {
+        "a": "Material properties",
+        "b": "Surface roughness",
+        "c": "Lubrication conditions",
+        "d": "All of the above"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. At high loads, the dominant wear mechanism in materials is often:",
+      "answers": {
+        "a": "Abrasive wear",
+        "b": "Adhesive wear",
+        "c": "Fatigue wear",
+        "d": "Corrosion wear"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. In the context of wear, the relationship between wear coefficient and wear rate can be described as:",
+      "answers": {
+        "a": "Higher wear coefficient corresponds to higher wear rate",
+        "b": "Higher wear coefficient corresponds to lower wear rate",
+        "c": "Wear coefficient and wear rate are independent of each other",
+        "d": "The relationship between wear coefficient and wear rate depends on the material properties"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. How does increasing the applied load affect the lubrication film thickness in an elastohydrodynamic lubricated contact?",
+      "answers": {
+        "a": "Increases the lubrication film thickness",
+        "b": "Decreases the lubrication film thickness",
+        "c": "Has no effect on the lubrication film thickness",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}
