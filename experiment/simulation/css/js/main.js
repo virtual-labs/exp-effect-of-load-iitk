@@ -1,3 +1,4 @@
+
 //Your JavaScript goes in here
 function openNav() {
     document.getElementById("mySidepanel").style.width = "500px";
@@ -320,5 +321,13 @@ document.getElementById("moveButton6").addEventListener("click", function() {
 
 
 
+
+
+  const reloadButton = document.getElementById('reloadButton');
+
+  // Add a click event listener to the button
+  reloadButton.addEventListener('click', function() {
+      location.reload(); // Reload the current page
+  });
 
 
