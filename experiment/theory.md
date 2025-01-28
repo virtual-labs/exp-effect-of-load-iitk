@@ -17,5 +17,47 @@ Fatigue wear is caused by repeated cyclic loading, which can lead to the formati
 <b>Effect of load on lubrication film thickness:</b><br>
 The presence of lubrication between surfaces can significantly influence wear behavior. Under higher loads, the lubricant film thickness may decrease, leading to increased metal-to-metal contact and higher wear rates. Adequate lubrication is crucial to minimize wear, especially under heavy loads. Typically, to avoid wear the lubrication film thickness must be proportional to the applied load. In an elastohydrodynamic lubrication (EHL), the lubrication film thickness (h) must cope the applied load (W) and sliding velocity (V) and be calculated using the Dowson-Higginson equation as follows:<br>
 <image src="images/pic4.PNG"><br>
-Typically, the effect of load on the wear rate is graphically represented in wear maps with other parameters such as sliding speed and material properties. These maps are constructed by conducting experiments under various combinations of parameters and plotting the resulting wear rates. They provide a more comprehensive understanding of wear behavior and can help identify optimal operating conditions to minimize wear.
+Typically, the effect of load on the wear rate is graphically represented in wear maps with other parameters such as sliding speed and material properties. These maps are constructed by conducting experiments under various combinations of parameters and plotting the resulting wear rates. They provide a more comprehensive understanding of wear behavior and can help identify optimal operating conditions to minimize wear.<br><br>
+<b><u>Tribo-couple for the test</u></b><br>
+Stainless steel flat and ball<br><br>
+<image src="images\tribo couple.png"><br><br><center>
+<image src="images\Screenshot 2025-01-26 172803.png">
+<image src="images\Screenshot 2025-01-26 173149.png"><br><br></center>
+
+<b><u>Results</u></b><br><br>
+<b> Test 1 </b>                            
+Sample: 316 L <br>
+stainless steel (Ra= 16 nm) <br>
+Counter body: stainless steel<br>
+Load: 10N<br>
+Speed: 50 RPM<br>
+Time: 30 min<br><br>
+<b>Test 2</b><br>
+Sample: 316 L <br>
+stainless steel (Ra= 28 nm)<br>
+Counter body: stainless steel<br>
+Load: 20N<br>
+Speed: 50 RPM<br>
+Time: 30 min<br><br>
+<image src="images\Screenshot 2025-01-26 171611.png"><br><br><center>
+<b><u>Conclusions</u></b><br></center><br>
+Wear scar depth and wear scar width increase with increase in load
+<br>
+
+Wear rate increases with increase in load<br>
+
+
+Specific wear rate does not vary with load<br>
+
+
+In general, the coefficient of friction for metallic pairs tends to increase under low loads as the load rises, due to the breakdown of the oxide film and/or elastic deformation.
+<br>
+
+It remains at a high value for a load range and begins to drop at high loads
+because of interfacial changes caused by wear<br>
+
+
+
+
+
 

@@ -1,3 +1,4 @@
+
 //Your JavaScript goes in here
 function openNav() {
     document.getElementById("mySidepanel").style.width = "500px";
@@ -317,6 +318,9 @@ document.getElementById("moveButton6").addEventListener("click", function() {
       document.getElementById("moveButton7").style.display = "block";
     });
   });
+
+
+
 
 
 

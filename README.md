@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+# -effect-of-load-on-wear-of-materials-iitk-kshitj
+=======
 ## Introduction
 
 
@@ -21,3 +24,47 @@ SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
 1 |Neel Prajapati | Student |Mechanical Engineering | REC Banda | neelprajapati7568@gmail.com
 
+>>>>>>> 58eb523 (Your commit message)
+At line:1 char:3
++ <<<<<<< HEAD
++   ~
+Missing file specification after redirection operator.
+At line:1 char:2
++ <<<<<<< HEAD
++  ~
+The '<' operator is reserved for future use.
+At line:1 char:4
++ <<<<<<< HEAD
++    ~
+Missing file specification after redirection operator.
+At line:1 char:3
++ <<<<<<< HEAD
++   ~
+The '<' operator is reserved for future use.
+At line:1 char:5
++ <<<<<<< HEAD
++     ~
+Missing file specification after redirection operator.
+At line:1 char:4
++ <<<<<<< HEAD
++    ~
+The '<' operator is reserved for future use.
+At line:1 char:6
++ <<<<<<< HEAD
++      ~
+Missing file specification after redirection operator.
+At line:1 char:5
++ <<<<<<< HEAD
++     ~
+The '<' operator is reserved for future use.
+At line:1 char:7
++ <<<<<<< HEAD
++       ~
+Missing file specification after redirection operator.
+At line:1 char:6
++ <<<<<<< HEAD
++      ~
+The '<' operator is reserved for future use.
+Not all parse errors were reported.  Correct the reported errors and try again.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingFileSpecification
