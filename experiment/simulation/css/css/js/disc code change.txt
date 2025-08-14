@@ -1,0 +1,49 @@
+const slideshowImage = document.querySelector('.discImage');
+
+const slideshowImagesArray = [
+    '../css/disc/1-1.png',
+    '../css/disc/2-1.png',
+    '../css/disc/3-1.png',
+    '../css/disc/4-1.png',
+    '../css/disc/5-1.png',
+    '../css/disc/6-1.png',
+    '../css/disc/7-1.png',
+    '../css/disc/8-1.png',
+    '../css/disc/9-1.png',
+    '../css/disc/10-1.png',
+    '../css/disc/11-1.png',
+    '../css/disc/12-1.png',
+    '../css/disc/13-1.png',
+    '../css/disc/14-1.png',
+    '../css/disc/15-1.png',
+    '../css/disc/16-1.png',
+    '../css/disc/1-1.png',
+    '../css/disc/2-1.png',
+    '../css/disc/3-1.png',
+    '../css/disc/4-1.png',
+    '../css/disc/5-1.png',
+    '../css/disc/6-1.png',
+    '../css/disc/7-1.png',
+];
+
+slideshowImage.style.width = "150px";
+slideshowImage.style.height = "130px";
+slideshowImage.setAttribute('x', '1610');
+slideshowImage.setAttribute('y', '1002');
+
+let slideshowCurrentIndex = slideshowImagesArray.length - 1;  // Start from the last image
+let slideshowIntervalId;
+
+function updateSlideshowImage() {
+    slideshowImage.setAttribute('href', slideshowImagesArray[slideshowCurrentIndex]);
+    slideshowCurrentIndex = (slideshowCurrentIndex - 1 + slideshowImagesArray.length) % slideshowImagesArray.length;
+}
+
+function startImageSlideshow() {
+    clearInterval(slideshowIntervalId);  // prevent overlapping
+    slideshowIntervalId = setInterval(updateSlideshowImage, 10);  // avoid 0.01, too fast
+
+    setTimeout(() => {
+        clearInterval(slideshowIntervalId);
+    }, 5000);
+}

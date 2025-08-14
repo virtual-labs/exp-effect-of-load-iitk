@@ -90,6 +90,7 @@ color: white;
 .allbox{
   border:4px solid rgb(25, 78, 134);
   border-radius: 25px;
+  height:2000px;
   margin:40px;
   margin-bottom: 20px;
   padding: 30px;
@@ -104,7 +105,7 @@ color: white;
   flex-direction: column;
   /* background-color: rgba(252, 234, 153, 0.651); */
   background-color:  bisque;
-  height: 1300px;
+  height: 1700px;
   border-radius: 25px;
   width: 50%;
   margin: 2px;
@@ -116,7 +117,7 @@ color: white;
   display: flex;
   flex-direction: column;
   background-color:  bisque;
-  height: 1300px;
+  height: 1700px;
   border-radius: 25px;
   width: 150%;
   margin: 2px;
@@ -327,7 +328,7 @@ display: flex;
 .img1{
   height: 190px;
   border-radius: 25px;
-  width: 450px;
+  width: 350px;
   margin-left: 10px;
   /* margin-top: 5px; */
   border: 3px solid black;
@@ -339,9 +340,8 @@ display: flex;
 .img1{
   height: 190px;
   border-radius: 25px;
-  width: 350px;
+  width: 250px;
   margin-left: 10px;
-  margin-top: 5px;
   border: 3px solid black;
 }
 }
@@ -374,5 +374,281 @@ height: 190px;
 }
 
 
+/* 
+this the changed  code  */
+    .formal-container {
+      width: 300px; /* Small width */
+      padding: 20px;
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-family: 'Georgia', 'Times New Roman', serif; /* Formal font */
+      font-size: 16px;
+      line-height: 1.6;
+      text-align: left; /* Left aligned text */
+      color: #333;
+            margin-left: auto;
+      margin-right: 0;
+    }
 
 
+        #resultContainer {
+      display: none;
+      width: 300px;
+      margin: 20px auto;
+      border: 2px solid #ccc;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+
+
+    #resultContainer {
+  display: block;
+  width: 500px; /* slightly wider for larger image */
+  padding: 20px; /* reduced padding */
+  background-color: #fff8f8;
+  border: 1px solid #e38b8b; /* thinner border */
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 30px auto;
+}
+
+#slideshowImage {
+  width: 100%;
+  height: auto;
+  max-height: 400px; /* increased height */
+  object-fit: contain;
+  border-radius: 16px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.4s ease-in-out;
+}
+
+/* Stylish button (unchanged, already good) */
+#nextButton {
+  background: linear-gradient(to right, #ff5e6c, #ff8a5e);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(255, 94, 108, 0.4);
+}
+
+#nextButton:hover {
+  background: linear-gradient(to right, #ff3e50, #ff7040);
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(255, 94, 108, 0.5);
+}
+
+.caption {
+  margin-top: 12px;
+  font-size: 16px;
+  color: #444;
+  font-family: 'Georgia', serif;
+  line-height: 1.4;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Center the entire result box */
+/* Center the entire result box */
+#resultContainer {
+  display: none;
+  margin: 20px auto;
+  width: 800px; /* fixed width */
+  height: 600px; /* fixed height */
+  text-align: center;
+  border: 5px solid rgba(0, 0, 0, 0.974);
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  position:static;
+  top: -250px;
+  box-sizing: border-box;
+}
+
+/* Image wrapper */
+#imageWrapper {
+  position: relative;
+}
+
+/* The image itself */
+.materialPhoto {
+  display: none;
+  width: 100%;
+  max-height: 350px; /* fixed height */
+  object-fit: contain;
+  border: 3px solid black;
+  border-radius: 6px;
+}
+
+/* Label at top of image */
+#imageLabel {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Description below the image */
+#imageDescription {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.4;
+  height: 90px; /* fixed height */
+  overflow: auto; /* scroll if content overflows */
+  white-space: pre-line;
+}
+
+
+/* Nav buttons */
+.nav-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-buttons button {
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+  background-color: #fff;
+  color: #000;
+}
+
+h2 {
+  color: red;
+  font-size: 24px;
+}
+
+ul {
+  font-size: 17px;
+  margin-left: 20px;
+  line-height: 1.6;
+}
+
+.formula-box {
+  background: #f0f0f0;
+  border-left: 5px solid #007bff;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+/* Popup Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+.modal-content {
+  background: white;
+  margin: 8% auto;
+  padding: 25px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 700px;
+  position: relative;
+  color: #000;
+
+  /* ✅ Scroll settings */
+  max-height: 80vh;         /* Limit height to 80% of viewport */
+  overflow-y: auto;         /* Add vertical scrollbar if needed */
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  color: red;
+  cursor: pointer;
+}
+.close:hover {
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+.tick {
+  display: none;
+  margin-left: 8px;
+  color: green;
+  font-size: 18px;
+}
+
+.button.clicked .tick {
+  display: inline;
+}
