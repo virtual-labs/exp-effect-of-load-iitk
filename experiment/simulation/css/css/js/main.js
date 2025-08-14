@@ -1,4 +1,56 @@
+const slideshowImage = document.querySelector('.discImage');
 
+const slideshowImagesArray = [
+    '../css/disc/1-1.png',
+    '../css/disc/2-1.png',
+    '../css/disc/3-1.png',
+    '../css/disc/4-1.png',
+    '../css/disc/5-1.png',
+    '../css/disc/6-1.png',
+    '../css/disc/7-1.png',
+    '../css/disc/8-1.png',
+    '../css/disc/9-1.png',
+    '../css/disc/10-1.png',
+    '../css/disc/11-1.png',
+    '../css/disc/12-1.png',
+    '../css/disc/13-1.png',
+    '../css/disc/14-1.png',
+    '../css/disc/15-1.png',
+    '../css/disc/16-1.png',
+        '../css/disc/1-1.png',
+    '../css/disc/2-1.png',
+    '../css/disc/3-1.png',
+    '../css/disc/4-1.png',
+    '../css/disc/5-1.png',
+    '../css/disc/6-1.png',
+    '../css/disc/7-1.png',
+];
+slideshowImage.style.width="150px";
+slideshowImage.style.height="130px";
+slideshowImage.setAttribute('x', '1610');
+slideshowImage.setAttribute('y', '1002');
+let slideshowCurrentIndex = 0;
+let slideshowIntervalId;
+
+function updateSlideshowImage() {
+    slideshowCurrentIndex = (slideshowCurrentIndex + 1) % slideshowImagesArray.length;
+    slideshowImage.setAttribute('href', slideshowImagesArray[slideshowCurrentIndex]); // <-- key change
+}
+
+function startImageSlideshow() {
+    clearInterval(slideshowIntervalId);  // prevent overlapping
+    slideshowIntervalId = setInterval(updateSlideshowImage, 2);
+
+    setTimeout(() => {
+        clearInterval(slideshowIntervalId);
+    }, 5000);
+}
+
+
+
+
+
+//changed code
 //Your JavaScript goes in here
 function openNav() {
     document.getElementById("mySidepanel").style.width = "500px";
@@ -111,6 +163,7 @@ function moveObject6() {
 
 moveButton6.addEventListener('click', moveObject6);
 
+
 // Button 9 move
 const moveButton9 = document.getElementById('moveButton9');
 const objectToMove9 = document.getElementById('objectToMove9');
@@ -152,7 +205,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     function revealNextButton(currentButtonIndex) {
         if (currentButtonIndex < buttons.length - 1) {
-            buttons[currentButtonIndex].disabled = true;
+            // buttons[currentButtonIndex].disabled = true;
             buttons[currentButtonIndex + 1].classList.remove('hidden');
         }
     }
@@ -183,6 +236,7 @@ svgContainer.addEventListener("mouseover", (e) => {
 svgContainer.addEventListener("mouseout", () => {
     elementName.style.display = "none";
 });
+
 
 
 // rotation base
@@ -216,7 +270,7 @@ moveButton7.addEventListener('click', () => {
     startAnimation();
     setTimeout(stopAnimation, 5000); // Stop after 5 seconds (5000 milliseconds)
 });
-
+moveButton7.addEventListener('click', startImageSlideshow);
 
 // JavaScript logic
 const material1Button = document.getElementById('moveButton');
@@ -226,28 +280,59 @@ const resultContainer = document.getElementById('resultContainer');
 const material1Photo = document.getElementById('material1Photo');
 const material2Photo = document.getElementById('material2Photo');
 
-// Function to show the result photo based on the choice of material
-function showResult() {
-    if (flag_material1) {
 
-        resultContainer.style.display = 'block';
-        material1Photo.style.display = 'block';
-        material2Photo.style.display = 'none';
-    }
-    if (flag_material2) {
-            resultContainer.style.display = 'block';
-            material1Photo.style.display = 'none';
-            material2Photo.style.display = 'block';
-        }
-    // if(!flag_material1 && !flag_material2){
-    //     alert('Please select a material first.');
+const slideshowImg = document.getElementById('slideshowImage');
+const nextBtn = document.getElementById('nextButton');
 
-    // }
+const material1Slides = [
+  '../css/output/co1-1.png',
+  '../css/output/co1-2.png',
+];
+
+const material2Slides = [
+  '../css/output/co2-1.png',
+  '../css/output/co2-2.png',
+];
+//chnaged code
+const material1Captions = [
+  'Material 1 - Image 1 Description',
+  'Material 1 - Image 2 Description',
+];
+
+const material2Captions = [
+  'Material 2 - Image 1 Description',
+  'Material 2 - Image 2 Description',
+];
+
+//changed code
+let slideIndex = 0;
+let currentSlides = [];
+
+function showSlideshow() {
+  resultContainer.style.display = 'block';
+
+  if (flag_material1) {
+    currentSlides = material1Slides;
+  } else if (flag_material2) {
+    currentSlides = material2Slides;
+  } else {
+    alert('Please select a material first.');
+    return;
+  }
+
+  slideIndex = 0;
+  slideshowImg.src = currentSlides[slideIndex];
 }
-console.log(moveButton8.addEventListener('click', showResult)
-)
-// Add click event listener to the Show Result button
-moveButton8.addEventListener('click', showResult);
+
+function nextSlide() {
+  if (currentSlides.length === 0) return;
+  slideIndex = (slideIndex + 1) % currentSlides.length;
+  slideshowImg.src = currentSlides[slideIndex];
+}
+
+moveButton8.addEventListener('click', showSlideshow);
+nextBtn.addEventListener('click', nextSlide);
+
 
 
 
@@ -331,3 +416,315 @@ document.getElementById("moveButton6").addEventListener("click", function() {
   });
 
 
+
+
+
+
+
+function showCalculation() {
+  const container = document.getElementById("calculationContainer");
+  container.style.display = "block";
+
+  if (selectedLoad === "10") {
+    container.innerHTML = generateTable({
+      testNumber: "1",
+      sample: "316 L stainless steel (Ra = 16 nm)",
+      counterBody: "Stainless steel",
+      load: "10 N",
+      speed: "50 RPM",
+      time: "30 min",
+      dmax: "33 µm",
+      cof: "0.45±0.07",
+      deltaM: "0.009 g",
+      massLossWr: "4.4x10⁻² mm³/m",
+      massLossSpWr: "4.4x10⁻³ mm³/N·m"
+    });
+  } else if (selectedLoad === "20") {
+    container.innerHTML = generateTable({
+      testNumber: "2",
+      sample: "316 L stainless steel (Ra = 28 nm)",
+      counterBody: "Stainless steel",
+      load: "20 N",
+      speed: "50 RPM",
+      time: "30 min",
+      dmax: "58 µm",
+      cof: "0.40±0.06",
+      deltaM: "0.011 g",
+      massLossWr: "5.3x10⁻² mm³/m",
+      massLossSpWr: "2.7x10⁻³ mm³/N·m"
+    });
+  } else {
+    container.innerHTML = "<p style='color:red;'>Please select a Load first.</p>";
+  }
+}
+function generateTable(data) {
+  return `
+    <table style="width:100%; border-collapse:collapse; margin-top:10px;" border="1">
+      <tr style="background:#eee;">
+        <th>Parameter</th>
+        <th>Value</th>
+      </tr>
+      <tr>
+        <td>Sample<br>(Ra = Sample roughness)</td>
+        <td>${data.sample}</td>
+      </tr>
+      <tr>
+        <td>Counter Body</td>
+        <td>${data.counterBody}</td>
+      </tr>
+      <tr>
+        <td>Load</td>
+        <td>${data.load}</td>
+      </tr>
+      <tr>
+        <td>Speed</td>
+        <td>${data.speed}</td>
+      </tr>
+      <tr>
+        <td>Time</td>
+        <td>${data.time}</td>
+      </tr>
+      <tr>
+        <td>Max Penetration Depth (dmax)</td>
+        <td>${data.dmax}</td>
+      </tr>
+      <tr>
+        <td>Coefficient of Friction (cof)</td>
+        <td>${data.cof}</td>
+      </tr>
+      <tr>
+  <td>Mass Loss<br>(Δm = m₁ - m₂)</td>
+  <td>${data.deltaM}</td>
+</tr>
+
+      <tr>
+        <td>Wear Rate (Wr)</td>
+        <td>${data.massLossWr}</td>
+      </tr>
+      <tr>
+        <td>Specific Wear Rate (Sp. Wr)</td>
+        <td>${data.massLossSpWr}</td>
+      </tr>
+    </table>
+    <p style="margin-top:10px; font-style:italic; font-size:14px;">
+      Ra = Sample surface roughness, dmax = Maximum penetration depth, Δm = Change in mass, Wr = Wear rate, Sp. Wr = Specific wear rate
+    </p>
+  `;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let selectedLoad = null;   // stores '10' or '20'
+let originalImg = null;
+let xProfileImg = null;
+let yProfileImg = null;
+
+function selectLOAD(load) {
+  selectedLoad = load;  // '10' or '20'
+  
+  // Show the "Show Result" button when load is selected
+  document.getElementById("moveButton8").classList.remove("hidden");
+
+  // Hide result container and images if user changes load
+  document.getElementById("resultContainer").style.display = "none";
+  document.querySelectorAll('.materialPhoto').forEach(img => img.style.display = "none");
+}
+
+function showResult() {
+  if (!selectedLoad) return;
+
+  // Hide all images first
+  document.querySelectorAll('.materialPhoto').forEach(img => img.style.display = "none");
+
+  // Assign images based on selectedLoad
+  if (selectedLoad === '10') {
+    originalImg = document.querySelector('img[src="out1.png"]');
+    xProfileImg = document.querySelector('img[src="out11.png"]');
+    yProfileImg = document.querySelector('img[src="out12.png"]');
+  } else if (selectedLoad === '20') {
+    originalImg = document.querySelector('img[src="out2.png"]');
+    xProfileImg = document.querySelector('img[src="out21.png"]');
+    yProfileImg = document.querySelector('img[src="out22.png"]');
+  }
+
+  // Show original image by default
+  showImage(originalImg);
+
+  // Enable/disable nav buttons accordingly
+  toggleNavButtons(true, true, false);
+
+  // Show the container
+  document.getElementById("resultContainer").style.display = "block";
+}
+
+function showImage(img) {
+  // Hide all images first
+  document.querySelectorAll('.materialPhoto').forEach(i => i.style.display = "none");
+  
+  if (img) {
+    img.style.display = "block";
+    document.getElementById("imageLabel").innerHTML = `<b>${img.dataset.label}</b>`;
+    document.getElementById("imageDescription").innerText = img.dataset.desc;
+  }
+}
+
+function toggleNavButtons(xEnabled, yEnabled, origEnabled) {
+  document.getElementById("nextBtn").disabled = !xEnabled;  // X-profile
+  document.getElementById("prevBtn").disabled = !yEnabled;  // Y-profile
+  document.getElementById("origBtn").disabled = !origEnabled;  // Original
+}
+
+// Navigation buttons event listeners
+document.getElementById("prevBtn").addEventListener("click", () => {
+  showImage(yProfileImg);
+  toggleNavButtons(true, false, true);
+});
+
+document.getElementById("nextBtn").addEventListener("click", () => {
+  showImage(xProfileImg);
+  toggleNavButtons(false, true, true);
+});
+
+document.getElementById("origBtn").addEventListener("click", () => {
+  showImage(originalImg);
+  toggleNavButtons(true, true, false);
+});
+
+
+
+
+function showcMessage() {
+  document.getElementById("cMessage").style.display = "block";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function openFormulaModal() {
+  document.getElementById("formulaModal").style.display = "block";
+
+  // 🔁 Ask MathJax to re-typeset formulas inside modal
+  if (window.MathJax) {
+    MathJax.typesetPromise();
+  }
+}
+
+function closeFormulaModal() {
+  document.getElementById("formulaModal").style.display = "none";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function markClicked(button) {
+    // Remove tick from all buttons (if you want only one active at a time)
+    // document.querySelectorAll('.button').forEach(btn => btn.classList.remove('clicked'));
+
+    // Add tick to the clicked one
+    button.classList.add('clicked');
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function showinitialMessage() {
+  document.getElementById("initialMessage").style.display = "block";
+}
+
+function showCleanMessage() {
+  document.getElementById("cleanMessage").style.display = "block";
+}
+
+function showWeightMessage() {
+  document.getElementById("weightMessage").style.display = "block";
+}
+
+
+
+
+
+
+
+
+
+function startRotation() {
+  const cleanBtn = document.getElementById('cleanSampleBtn');
+
+  // Hide the clean button
+  cleanBtn.style.display = "none";
+
+  // Show it again after 5 seconds
+  setTimeout(() => {
+    cleanBtn.style.display = "inline-block"; // or "block" depending on your layout
+  }, 5000);
+}
+
+function showCleanMessage() {
+  document.getElementById("cleanMessage").style.display = "block";
+}

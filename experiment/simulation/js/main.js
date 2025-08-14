@@ -1,4 +1,56 @@
+const slideshowImage = document.querySelector('.discImage');
 
+const slideshowImagesArray = [
+    '../css/disc/1-1.png',
+    '../css/disc/2-1.png',
+    '../css/disc/3-1.png',
+    '../css/disc/4-1.png',
+    '../css/disc/5-1.png',
+    '../css/disc/6-1.png',
+    '../css/disc/7-1.png',
+    '../css/disc/8-1.png',
+    '../css/disc/9-1.png',
+    '../css/disc/10-1.png',
+    '../css/disc/11-1.png',
+    '../css/disc/12-1.png',
+    '../css/disc/13-1.png',
+    '../css/disc/14-1.png',
+    '../css/disc/15-1.png',
+    '../css/disc/16-1.png',
+        '../css/disc/1-1.png',
+    '../css/disc/2-1.png',
+    '../css/disc/3-1.png',
+    '../css/disc/4-1.png',
+    '../css/disc/5-1.png',
+    '../css/disc/6-1.png',
+    '../css/disc/7-1.png',
+];
+slideshowImage.style.width="150px";
+slideshowImage.style.height="130px";
+slideshowImage.setAttribute('x', '1610');
+slideshowImage.setAttribute('y', '1002');
+let slideshowCurrentIndex = 0;
+let slideshowIntervalId;
+
+function updateSlideshowImage() {
+    slideshowCurrentIndex = (slideshowCurrentIndex + 1) % slideshowImagesArray.length;
+    slideshowImage.setAttribute('href', slideshowImagesArray[slideshowCurrentIndex]); // <-- key change
+}
+
+function startImageSlideshow() {
+    clearInterval(slideshowIntervalId);  // prevent overlapping
+    slideshowIntervalId = setInterval(updateSlideshowImage, 0.1);
+
+    setTimeout(() => {
+        clearInterval(slideshowIntervalId);
+    }, 5000);
+}
+
+
+
+
+
+//changed code
 //Your JavaScript goes in here
 function openNav() {
     document.getElementById("mySidepanel").style.width = "500px";
@@ -111,6 +163,7 @@ function moveObject6() {
 
 moveButton6.addEventListener('click', moveObject6);
 
+
 // Button 9 move
 const moveButton9 = document.getElementById('moveButton9');
 const objectToMove9 = document.getElementById('objectToMove9');
@@ -185,6 +238,7 @@ svgContainer.addEventListener("mouseout", () => {
 });
 
 
+
 // rotation base
 
  // JavaScript code for the rotation animation
@@ -216,7 +270,7 @@ moveButton7.addEventListener('click', () => {
     startAnimation();
     setTimeout(stopAnimation, 5000); // Stop after 5 seconds (5000 milliseconds)
 });
-
+moveButton7.addEventListener('click', startImageSlideshow);
 
 // JavaScript logic
 const material1Button = document.getElementById('moveButton');
@@ -323,6 +377,11 @@ document.getElementById("moveButton6").addEventListener("click", function() {
 
 
 
+  const reloadButton = document.getElementById('reloadButton');
 
+  // Add a click event listener to the button
+  reloadButton.addEventListener('click', function() {
+      location.reload(); // Reload the current page
+  });
 
 
