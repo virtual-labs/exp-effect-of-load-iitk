@@ -570,13 +570,13 @@ function showResult() {
 
   // Assign images based on selectedLoad
   if (selectedLoad === '10') {
-    originalImg = document.querySelector('img[src="out1.png"]');
-    xProfileImg = document.querySelector('img[src="out11.png"]');
-    yProfileImg = document.querySelector('img[src="out12.png"]');
+    originalImg = document.querySelector('img[src="../simulation/output/out1.png"]');
+    xProfileImg = document.querySelector('img[src="../simulation/output/out11.png"]');
+    yProfileImg = document.querySelector('img[src="../simulation/output/out12.png"]');
   } else if (selectedLoad === '20') {
-    originalImg = document.querySelector('img[src="out2.png"]');
-    xProfileImg = document.querySelector('img[src="out21.png"]');
-    yProfileImg = document.querySelector('img[src="out22.png"]');
+    originalImg = document.querySelector('img[src="../simulation/output/out2.png"]');
+    xProfileImg = document.querySelector('img[src="../simulation/output/out21.png"]');
+    yProfileImg = document.querySelector('img[src="../simulation/output/out22.png"]');
   }
 
   // Show original image by default
