@@ -701,7 +701,22 @@ function showCleanMessage() {
   document.getElementById("cleanMessage").style.display = "block";
 }
 
-function showWeightMessage() {
+function showWeightMessage() 
+{
+  let m1 = 16.445;  // initial mass
+
+  // choose deltaM based on selected load
+  let deltaM = 0;
+
+  if (selectedLoad === "10") {
+    deltaM = 0.009;
+  } else if (selectedLoad === "20") {
+    deltaM = 0.011;
+  }
+
+  let m2 = m1 - deltaM;
+
+  document.getElementById("m2Value").textContent = m2.toFixed(3);
   document.getElementById("weightMessage").style.display = "block";
 }
 
