@@ -437,7 +437,7 @@ function showCalculation() {
       cof: "0.45±0.07",
       deltaM: "0.009 g",
       massLossWr: "4.4x10⁻² mm³/m",
-      massLossSpWr: "4.4x10⁻³ mm³/N·m"
+      massLossSpWr: "1.2x10⁻³ mm³/N·m"
     });
   } else if (selectedLoad === "20") {
     container.innerHTML = generateTable({
@@ -451,7 +451,7 @@ function showCalculation() {
       cof: "0.40±0.06",
       deltaM: "0.011 g",
       massLossWr: "5.3x10⁻² mm³/m",
-      massLossSpWr: "2.7x10⁻³ mm³/N·m"
+      massLossSpWr: "1.1x10⁻³ mm³/N·m"
     });
   } else {
     container.innerHTML = "<p style='color:red;'>Please select a Load first.</p>";
@@ -702,9 +702,21 @@ function showCleanMessage() {
 }
 
 function showWeightMessage() {
-  document.getElementById("weightMessage").style.display = "block";
-}
+  const weightBox = document.getElementById("weightMessage");
+  const finalMassText = document.getElementById("finalMassText");
 
+  weightBox.style.display = "block";
+
+  if (selectedLoad === "10") {
+    finalMassText.innerHTML = "<b>Final mass of the Sample m2 = 16.436 g</b>";
+  } 
+  else if (selectedLoad === "20") {
+    finalMassText.innerHTML = "<b>Final mass of the Sample m2 = 16.434 g</b>";
+  } 
+  else {
+    finalMassText.innerHTML = "<b style='color:red'>Please select load first.</b>";
+  }
+}
 
 
 
