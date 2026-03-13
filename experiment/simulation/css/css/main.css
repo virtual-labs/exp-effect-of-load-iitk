@@ -326,7 +326,7 @@ display: flex;
 }
 
 .img1{
-  height: 190px;
+  height: 170px;
   border-radius: 25px;
   width: 350px;
   margin-left: 10px;
@@ -337,13 +337,7 @@ display: flex;
 @media only screen and (max-width: 1300px){
 
 
-.img1{
-  height: 190px;
-  border-radius: 25px;
-  width: 250px;
-  margin-left: 10px;
-  border: 3px solid black;
-}
+
 }
 /* .img2{
 height: 190px;
