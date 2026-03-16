@@ -1,0 +1,69 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Mechanical properties of tribosurfaces don’t affect the wear rate. True or False.",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. Applied load can increase",
+      "answers": {
+        "a": "Density of materials",
+        "b": "Magnitude of the contact pressure",
+        "c": "Plastic deformation of tribosurfaces",
+        "d": "Weight of materials"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. During wear of tribosurfaces, increase in load increases",
+      "answers": {
+        "a": "Wear rate of samples",
+        "b": "Hardness of samples",
+        "c": "Thermal conductivity of samples",
+        "d": "Higher frictional stresses"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a & d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. To lower the wear rate with an increase in load on tribosurfaces",
+      "answers": {
+        "a": "The lubrication film thickness must be increased",
+        "b": "The surface roughness must be improved",
+        "c": "Density of sample must be increased",
+        "d": "We need to heat samples"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a & b",
+      "difficulty": "beginner"
+    }
+  ]
+}

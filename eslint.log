@@ -1,0 +1,9 @@
+
+/home/runner/work/exp-effect-of-load-iitk/exp-effect-of-load-iitk/experiment/simulation/css/css/js/main.js
+  740:10  error  Parsing error: Identifier 'showCleanMessage' has already been declared
+
+/home/runner/work/exp-effect-of-load-iitk/exp-effect-of-load-iitk/experiment/simulation/js/main.js
+  743:10  error  Parsing error: Identifier 'showCleanMessage' has already been declared
+
+✖ 2 problems (2 errors, 0 warnings)
+
